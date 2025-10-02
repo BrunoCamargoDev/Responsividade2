@@ -1,9 +1,9 @@
-document.getElementById('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const displaySize = document.getElementById("tamanho-tela");
     function updateScreenSize() {
         const width = window.innerWidth;
         displaySize.textContent = `Largura da tela ${width}px`;
-        
+
         const container = document.querySelector('.container');
         let currentAlignment = "Desktop (justify-content: center)"
 
